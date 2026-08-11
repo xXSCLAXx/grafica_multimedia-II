@@ -1,21 +1,22 @@
 import { Component } from '@angular/core';
-import {Juego} from '../../model/juego';
-import {Juegos} from '../../service/juegos';
-import {ActivatedRoute} from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { RouterLink, ActivatedRoute } from '@angular/router';
+import {Celular} from '../../model/juego';
+import {Celulares} from '../../service/juegos';
 
 @Component({
-  selector: 'app-detalle-juego',
-  imports: [],
+  selector: 'app-detalle-celular',
+  imports: [CommonModule, RouterLink],
   templateUrl: './detalle-juego.html',
   styleUrl: './detalle-juego.scss',
 })
-export class DetalleJuego {
-  juego: Juego | undefined;
+export class DetalleCelular {
+  celular: Celular | undefined;
 
   constructor(
     private route: ActivatedRoute,
-    private juegosService: Juegos) {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.juego = this.juegosService.obtenerJuegoPorId(id);
+    private celularesService: Celulares) {
+    const nombre = this.route.snapshot.paramMap.get('nombre') ?? '';
+    this.celular = this.celularesService.obtenerCelularPorNombre(nombre);
   }
 }

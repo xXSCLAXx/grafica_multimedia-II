@@ -1,6 +1,26 @@
-@if (juego){
+@if (celular){
   <div class="detalle">
-    <a routerLink="/">olver Catalogo</a>
-    <h1>plataforma {{juego.plataforma}}</h1>
+    <a routerLink="/">Volver al catálogo</a>
+    <h1>{{celular.nombre}}</h1>
+    <p>{{celular.marca}} · {{celular.modelo}}</p>
+    <p>{{celular.descripcion}}</p>
+
+    <div class="detalle__bloque">
+      <h2>Especificaciones</h2>
+      <ul>
+        <li>Sistema operativo: {{celular.sistemaOperativo}}</li>
+        <li>Almacenamiento: {{celular.almacenamiento}}</li>
+        <li>RAM: {{celular.ram}}</li>
+        <li>Pantalla: {{celular.pantalla}}</li>
+        <li>Batería: {{celular.bateria}}</li>
+        <li>Cámara: {{celular.camara}}</li>
+        <li>Procesador: {{celular.procesador}}</li>
+        <li>Colores: {{celular.colores.join(', ')}}</li>
+        <li>Año de lanzamiento: {{celular.anioLanzamiento}}</li>
+        <li>Carga rápida: {{celular.cargaRapida}}</li>
+        <li>Resistencia al agua: {{celular.resistenciaAgua}}</li>
+        <li>Precio: {{celular.precio}}</li>
+      </ul>
+    </div>
   </div>
 }

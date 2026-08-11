@@ -1,9 +1,10 @@
 <div class="grid">
-  @for (juego of juegos; track juego.id) {
-    <div class="tarjeta" [routerLink]="['/juego', juego.id]" >
-      <img [src]="juego.imagen" [alt]="juego.nombre"/>
-      <h3>{{juego.nombre}}</h3>
-      <p> {{juego.genero}} . {{juego.plataforma}}</p>
+  @for (celular of celulares; track celular.nombre) {
+    <div class="tarjeta" [routerLink]="['/celular', celular.nombre]" >
+      <img [src]="celular.imagen" [alt]="celular.nombre"/>
+      <h3>{{celular.nombre}}</h3>
+      <p>{{celular.marca}} · {{celular.almacenamiento}}</p>
+      <p>{{celular.pantalla}}</p>
     </div>
   }
 </div>

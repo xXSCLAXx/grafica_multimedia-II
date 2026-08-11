@@ -1,9 +1,19 @@
-export interface Juego {
-  id: number;
+export interface Celular {
   nombre: string;
-  genero: string;
-  plataforma: string;
-  anio:number;
-  rating: number;
+  marca: string;
+  modelo: string;
+  sistemaOperativo: string;
+  almacenamiento: string;
+  ram: string;
+  pantalla: string;
+  bateria: string;
+  camara: string;
+  procesador: string;
+  colores: string[];
+  anioLanzamiento: number;
+  cargaRapida: string;
+  resistenciaAgua: string;
+  precio: string;
   imagen: string;
+  descripcion: string;
 }
