@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.tarjeta {
+  background: #16213e;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .top {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #ff6b6b;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+}
