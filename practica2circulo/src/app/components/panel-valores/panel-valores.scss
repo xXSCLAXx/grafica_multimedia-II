@@ -1,0 +1,31 @@
+.panel-valores {
+  background: #16213e;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-family: monospace;
+
+  p { margin: 4px 0; }
+}
+
+.controles {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
+  margin-bottom: 16px;
+
+  h3 { margin: 0 0 8px; font-size: 14px; }
+
+  button {
+    padding: 8px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #16213e;
+    color: white;
+  }
+
+  .rojo { background: #ff6b6b; }
+  .azul { background: #4dabf7; }
+}

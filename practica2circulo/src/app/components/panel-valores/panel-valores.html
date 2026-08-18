@@ -1,0 +1,45 @@
+<section class="panel-valores">
+  <h2>Valores de la figura</h2>
+  <p>Posición X: {{ posicionX }}</p>
+  <p>Posición Y: {{ posicionY }}</p>
+  <p>Tamaño: {{ tamano }} px</p>
+  <p>Color: {{ color }}</p>
+  <p>Visible: {{ visible ? 'Sí' : 'No' }}</p>
+</section>
+
+<section class="controles">
+  <h3>Ubicación</h3>
+  <button type="button" (click)="ejecutar('arriba')">Arriba</button>
+  <div>
+    <button type="button" (click)="ejecutar('izquierda')">Izquierda</button>
+    <button type="button" (click)="ejecutar('derecha')">Derecha</button>
+  </div>
+  <button type="button" (click)="ejecutar('abajo')">Abajo</button>
+  <div>
+    <button type="button" (click)="ejecutar('diagonal-arriba-izquierda')">Diagonal arriba izquierda</button>
+    <button type="button" (click)="ejecutar('diagonal-arriba-derecha')">Diagonal arriba derecha</button>
+  </div>
+  <div>
+    <button type="button" (click)="ejecutar('diagonal-abajo-izquierda')">Diagonal abajo izquierda</button>
+    <button type="button" (click)="ejecutar('diagonal-abajo-derecha')">Diagonal abajo derecha</button>
+  </div>
+</section>
+
+<section class="controles">
+  <h3>Tamaño</h3>
+  <button type="button" (click)="ejecutar('agrandar')">+ Agrandar</button>
+  <button type="button" (click)="ejecutar('achicar')">- Achicar</button>
+</section>
+
+<section class="controles">
+  <h3>Color</h3>
+  <button type="button" (click)="ejecutar('rojo')" class="rojo">Rojo</button>
+  <button type="button" (click)="ejecutar('azul')" class="azul">Azul</button>
+</section>
+
+<section class="controles">
+  <h3>Visibilidad</h3>
+  <button type="button" (click)="ejecutar('visibilidad')">
+    {{ visible ? 'Ocultar' : 'Mostrar' }}
+  </button>
+</section>

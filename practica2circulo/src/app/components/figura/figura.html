@@ -1,0 +1,20 @@
+<div class="lienzo">
+ <div
+ class="figura"
+ [style.left.px]="posicionX"
+ [style.top.px]="posicionY"
+ [style.width.px]="tamano"
+ [style.height.px]="tamano"
+ [style.background]="color"
+ [style.visibility]="visible ? 'visible' : 'hidden'">
+ </div>
+</div>
+
+<app-panel-valores
+  [posicionX]="posicionX"
+  [posicionY]="posicionY"
+  [tamano]="tamano"
+  [color]="color"
+  [visible]="visible"
+  (accion)="ejecutarAccion($event)"
+></app-panel-valores>
